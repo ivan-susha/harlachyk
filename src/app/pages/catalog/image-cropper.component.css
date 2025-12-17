@@ -1,0 +1,21 @@
+.image-container {
+  position: relative;
+  width: 300px; /* Ширина контейнера */
+  height: 200px; /* Высота контейнера */
+  overflow: hidden; /* Скрываем всё, что выходит за границы */
+  border: 1px solid #ccc;
+  cursor: grab; /* Указывает, что можно перетаскивать */
+   transform: scale(1.1); /* Увеличение на 10% */
+}
+
+.image-container img {
+  position: absolute;
+  cursor: grab;
+  max-width: 100%; /* Изображение не будет шире контейнера */
+  height: auto;
+  user-select: none; /* Предотвращает выделение текста */
+}
+.image-container img.zoomed {
+  transform: scale(1.1); /* Увеличение на 10% */
+}
+

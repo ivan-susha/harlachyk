@@ -1,21 +1,7 @@
-.image-viewport1 {
-  width: 400px; /* Set your desired viewport size */
-  height: 300px;
-  overflow: hidden; /* This acts as the clipping mask */
-  border: 1px solid black;
-  position: relative; /* Essential for positioning the absolute image */
-}
-
-/* Optional: set the image to be larger than the container initially */
-.image-viewport1 img1 {
-  width: 150%;
-  height: auto;
-  /* Initial position is handled by the directive's transform */
-}
-.image-container1 {
+.image-container {
   /* Define the visible area size */
-  width: 300px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   /* Hide the overflowing parts of the image */
   overflow: hidden;
   /* Establish a positioning context for the absolute image */
@@ -23,10 +9,10 @@
   cursor: pointer;
 }
 
-.image-content1 {
+.image-content {
   /* Ensure the image is larger than its container for movement */
-  width: 150%;
-  height: 150%;
+  width: 250px;
+  height: 250px;
   /* Position the image relative to the container */
   position: absolute;
   top: 0;
@@ -36,10 +22,8 @@
 }
 
 /* Move the image when the container is hovered */
-.image-container:hover .image-content {
+.image-container1:hover .image-content1 {
   /* Example: move the content up and left to show a different part */
   transform: translate(-25%, -25%);
   /* You can adjust these percentages to control how much the image moves */
 }
-
-
