@@ -17,10 +17,10 @@ import { TabComponent } from "../tabs/tab";
   </div>
 </div>
 <div  class="tabs-container">
-  <app-tab [src]="'/assets/tab/tab1.jpg'" [title]="'Дзе набыць'" [alt]="'Где преобрести.'"></app-tab>
-  <app-tab [src]="'/assets/tab/tab2.jpg'" [title]="'Працэс'" [alt]="'Процесс.'"></app-tab>
-  <app-tab [src]="'/assets/tab/tab3.jpg'" [title]="'Маркеты'" [alt]="'Маркеты.'"></app-tab>
-  <app-tab [src]="'/assets/tab/tab4.jpg'" [title]="'Фотадзень'" [alt]="'Фотодень.'"></app-tab>
+  <app-tab [src]="'assets/tab/tab1.jpg'" [title]="'Дзе набыць'" [alt]="'Где преобрести.'"></app-tab>
+  <app-tab [src]="'assets/tab/tab2.jpg'" [title]="'Працэс'" [alt]="'Процесс.'"></app-tab>
+  <app-tab [src]="'assets/tab/tab3.jpg'" [title]="'Маркеты'" [alt]="'Маркеты.'"></app-tab>
+  <app-tab [src]="'assets/tab/tab4.jpg'" [title]="'Фотадзень'" [alt]="'Фотодень.'"></app-tab>
 
 </div>
     <h1>Кераміка ручных вырабаў</h1>

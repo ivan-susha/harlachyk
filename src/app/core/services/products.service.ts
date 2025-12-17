@@ -9,7 +9,7 @@ export class ProductsService {
       title: 'сэт “Квецень”',
       price: 3200,
       description: ' сэт “Квецень” у новых прыгажэнных глазурах.',
-     image: '/assets/img/set.jpg',
+     image: 'assets/img/set.jpg',
      video:''
     },
     {
@@ -17,15 +17,15 @@ export class ProductsService {
       title: 'Піялы “Караткевіч”',
       price: 4500,
       description: 'Піялы “Караткевіч”',
-      image: '/assets/img/cup.jpg',
-      video:'/assets/video/piala_video.mp4'
+      image: 'assets/img/cup.jpg',
+      video:'assets/video/piala_video.mp4'
     },
     {
       id: 3,
       title: 'Піяла',
       price: 2500,
       description: 'Сэт для гарбаты Blacksie',
-      image: '/assets/img/black_cup.jpg',
+      image: 'assets/img/black_cup.jpg',
       video:''
     },
      {
@@ -33,7 +33,7 @@ export class ProductsService {
       title: 'ўпрыгожваньні',
       price: 2500,
       description: 'Мае першыя ўпрыгожваньні',
-      image: '/assets/img/podveska.jpg',
+      image: 'assets/img/podveska.jpg',
       video:''
     }
     ,
@@ -42,15 +42,15 @@ export class ProductsService {
       title: 'Вазачкі Bionic',
       price: 2500,
       description: 'Вазачкі Bionic',
-      image: '/assets/img/vaza.jpg',
-      video:'/assets/video/vaza-bionic.mp4'
+      image: 'assets/img/vaza.jpg',
+      video:'assets/video/vaza-bionic.mp4'
     },
     {
       id: 6,
       title: 'Піялы і Імбрык',
       price: 2500,
       description: 'Піялы і Імбрык',
-      image: '/assets/img/piala.jpg',
+      image: 'assets/img/piala.jpg',
       video:''
     },
     {
@@ -58,15 +58,15 @@ export class ProductsService {
       title: 'Кубачкі для кавы “Караткевіч”',
       price: 2500,
       description: "<div>Рабі нечаканае. Рабі, як не бывае.</div><div>Рабі, як не робіць ніхто. І тады пераможаш! (с) У.С. Караткевіч</div>",
-      image: '/assets/img/cofe-cup.png',
-      video:'/assets/video/h_video1.mp4'
+      image: 'assets/img/cofe-cup.png',
+      video:'assets/video/h_video1.mp4'
     },
      {
       id: 8,
       title: 'Птушачкі',
       price: 2500,
       description: 'Керамічныя ружанцы з Божым Словам',
-      image: '/assets/img/beard.jpg',
+      image: 'assets/img/beard.jpg',
       video:''
     }
   ];
