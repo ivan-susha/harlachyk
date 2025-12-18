@@ -19,7 +19,6 @@ import Atropos from 'atropos';
 
       @for(p of products;track p.id){
        <app-product-card [product]="p" style="transform: scale(0.8);">
-
     </app-product-card>  }
 
 
@@ -32,7 +31,7 @@ import Atropos from 'atropos';
 })
 @Injectable()
 export class CatalogComponent implements OnInit{
-  @ViewChild('atroposContainer') atroposContainer!: ElementRef;
+ // @ViewChild('atroposContainer') atroposContainer!: ElementRef;
   private myAtropos: any;
  products
   constructor(private productsService: ProductsService) {this.products = this.productsService.getAll();}
@@ -41,6 +40,7 @@ export class CatalogComponent implements OnInit{
    ngOnInit() {
 // this.products = this.productsService.getAll();
   }
+/*
  ngAfterViewInit(): void {
     this.myAtropos = Atropos({
       el: this.atroposContainer.nativeElement,
@@ -60,5 +60,6 @@ export class CatalogComponent implements OnInit{
       this.myAtropos.destroy();
     }
   }
+    */
 }
 

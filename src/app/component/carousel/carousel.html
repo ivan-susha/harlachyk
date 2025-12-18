@@ -1,0 +1,21 @@
+
+
+ @if(showSlider){
+<ngx-slick-carousel
+  class="carousel"
+  #slickModal="slick-carousel"
+  [config]="slideConfig"
+>
+  <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+    <img  src="{{slide.img}}"
+      loading="lazy"
+      alt=""
+      width="80%"
+      height="80%"
+    />
+  </div>
+</ngx-slick-carousel>
+}
+
+
+

@@ -1,19 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductsService } from '../../core/services/products.service';
 import { CartService } from '../../core/services/cart.service';
 import { MatButtonModule } from '@angular/material/button';
-import { NgxSimpleParallaxJsModule } from 'ngx-simple-parallax-js';
-import { NgIf } from '@angular/common';
+import { Carousel } from "../../component/carousel/carousel";
 
+interface DataItem {
+  img: string;
+}
 @Component({
   standalone: true,
-  imports: [MatButtonModule],
+  imports: [MatButtonModule,   Carousel],
   template: `
+
     @if(product){
+       @if(product.carousel){
+        <app-carousel [slides]="slides"></app-carousel>
+       }
     <div class="flex-container">
-      @if(product.video){
-          <video autoplay muted playsinline loop controls height="550";width="400";>
+      @if(product.carousel){
+
+    }
+      @else if(product.video){
+          <video autoplay muted playsinline webkit-playinginline loop controls height="550";width="400";>
   <source  [src]="product.video" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
@@ -33,8 +42,10 @@ import { NgIf } from '@angular/common';
   `
 })
 export class ProductDetailsComponent implements OnInit{
-  product:any
-document:any
+  product:any;
+  img_array: any;
+  slides:DataItem[]=[];
+slideConfig:any
   constructor(
     private route: ActivatedRoute,
     private products: ProductsService,
@@ -45,23 +56,21 @@ document:any
     this.cart.add(this.product!);
   }
   ngOnInit() {
+
   this.product = this.products.getById(
     Number(this.route.snapshot.paramMap.get('id'))
   );
- // let t = this.product.description
- // this.product.description = this.stringToHTML(t)
+ this.img_array = this.product.carousel.split(",")
+ this.slides = [];
+ if(this.img_array.length>0){
+  for(let i=0;i<this.img_array.length;i++){
+    const el = { "img": this.img_array[i] };
+     this.slides.push(el);
+    // this.img_array[i] ="{"+ "img:"+this.img_array[i] + "/400x400" + "}"
+  }
+ // this.slideConfig = {"slidesToShow": 1, "slidesToScroll": 1, "autoplay": true, "dots": true, "infinite": true};
+ }
 }
- stringToHTML(htmlString:string) {
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(htmlString, 'text/html');
-    // Return the body's child nodes, or the body itself
-    return (doc.body.innerHTML);
-}
-stringToNode(htmlString:string) {
-    const tempDiv = document.createElement('div');
-    tempDiv.innerHTML = htmlString;
-    // Return the first child (if you need the wrapper div, return tempDiv)
-    return tempDiv.firstChild;
-}
+
 }
 

@@ -59,7 +59,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   flex-wrap:wrap;
   justify-content: center; /* Centers horizontally */
   align-items: center;     /* Centers vertically */
-  height: 70vh;           /* Use full viewport height for centering on the screen */
+  //height: 70vh;           /* Use full viewport height for centering on the screen */
   //row-gap: 10px;    /* Space between flex lines/rows */
   column-gap: 10px; /* Space between items in a row */
 }
@@ -94,3 +94,19 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   flex-direction: column;
   //height: 100vh;           /* Example: centers in the full viewport height */
 }
+.slick-prev::before, .slick-next::before {
+  color:black!important;
+}
+.slick-slider {
+    width: 88%;
+    margin: auto;
+    background:white;
+  }
+body .slick-prev,
+body .slick-next {
+    height: 45px;
+    width: 40px;
+    background: #575d59 !important;
+    z-index: 100;
+}
+

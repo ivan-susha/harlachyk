@@ -19,9 +19,12 @@
     "@angular/platform-browser": "^20.0.0",
     "@angular/router": "^20.0.0",
     "atropos": "^2.0.2",
+    "jquery": "^3.7.1",
     "ngx-simple-parallax-js": "^0.0.10",
+    "ngx-slick-carousel": "^20.0.0",
     "rxjs": "~7.8.0",
     "simple-parallax-js": "^5.6.2",
+    "slick-carousel": "^1.8.1",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
   },

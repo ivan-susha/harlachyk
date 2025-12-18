@@ -5,4 +5,5 @@ export interface Product {
   description: string;
   image: string;
   video:string;
+  carousel:string;
 }
