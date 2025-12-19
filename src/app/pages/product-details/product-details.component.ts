@@ -29,8 +29,8 @@ interface DataItem {
 </video>
     -->
 <video width="320" height="240" autoplay muted controls>
-  <source src="https://ivan-susha.github.io/harlachyk/assets/video/piala_video.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
+  <source src="https://ivan-susha.github.io/harlachyk/assets/video/piala_video.mp4" type="video/mp4"/>
+
   Your browser does not support the video tag.
 </video>
 
