@@ -101,8 +101,7 @@ export class ProductsService {
       price: 50,
       description: 'Галінка-падстаўка для аромапалачак 🌿<br>Пад замову.',
       image: 'assets/img/yavar.jpg',
-      //video:'assets/video/yavar.mp4',
-      video:'yavar.mp4',
+      video:'assets/video/yavar.mp4',
      carousel:''
     },
     {
