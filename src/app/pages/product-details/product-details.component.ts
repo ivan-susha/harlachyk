@@ -17,16 +17,24 @@ interface DataItem {
        @if(product.carousel){
         <app-carousel [slides]="slides"></app-carousel>
        }
+       @if(product.video){
+          <video  autoplay muted playsinline webkit-playinginline loop controls  height="550";width="400";>
+  <source  [src]="product.video" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+      }
     <div class="flex-container">
       @if(product.carousel){
 
     }
       @else if(product.video){
-          <video  muted playsinline webkit-playinginline loop controls  height="550";width="400";>
+        <!--
+          <video  autoplay muted playsinline webkit-playinginline loop controls  height="550";width="400";>
   <source  [src]="product.video" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
-
+      -->
       } @else {
       <img [src]="product.image" >}
 
