@@ -24,7 +24,7 @@ import Atropos from 'atropos';
     <mat-card-title>{{product.title}}</mat-card-title>
     <mat-card-content>{{product.price}} Br</mat-card-content>
     <button mat-button color="primary" [routerLink]="['/product', product.id]">
-      Подробнее
+      Падрабязней
     </button>
   </mat-card>
   `

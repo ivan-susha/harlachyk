@@ -43,7 +43,7 @@ interface DataItem {
       <div [innerHTML]="product.description"></div>
       <strong>{{product.price}} Br</strong>
       <br><br>
-      <button mat-raised-button color="primary" (click)="addToCart()">В корзину</button>
+      <button mat-raised-button color="primary" (click)="addToCart()">У кошык</button>
       </div>
 </div>
 }

@@ -23,7 +23,7 @@ import { TabComponent } from "../tabs/tab";
   <app-tab [src]="'assets/tab/tab4.jpg'" [title]="'Фотадзень'" [alt]="'Фотодень.'"></app-tab>
 
 </div>
-    <h1>Кераміка ручных вырабаў</h1>
+    <h1>Кераміка ручнога вырабу</h1>
     <p>Эксклюзіўныя вырабы для вашага дому</p>
 
     <button mat-raised-button color="primary" routerLink="/catalog">
