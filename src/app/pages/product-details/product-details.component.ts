@@ -21,19 +21,19 @@ interface DataItem {
     <div class="flex-container">
       @if(product.carousel){
 
-    } @else if(product.video){
-      <!--
-          <video  autoplay muted playsinline webkit-playinginline loop controls  height="550";width="400";>
-  <source  src="assets/video/cross-v.mp4" type="video/mp4" />
+    }
+     @else if(product.video){
+  <video  height="550" width="400" autoplay muted playsinline controls  >
+  <source  [src]="product.video" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
-    -->
+ <!--
 <video width="320" height="240" autoplay muted controls>
   <source src="https://ivan-susha.github.io/harlachyk/assets/video/piala_video.mp4" type="video/mp4"/>
 
   Your browser does not support the video tag.
 </video>
-
+    -->
       } @else {
       <img [src]="product.image" >
     }
